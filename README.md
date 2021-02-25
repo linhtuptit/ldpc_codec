@@ -10,6 +10,11 @@ Low-Density Parity-Check (LDPC) code is a linear error correcting code utilizing
 
 ## **Polar Encoder**
 ## **Polar Decoder**
+The commonly procedure for decoding LDPC is the Message Passing Algorithm (MPA), which is built on the Tanner graph with a set of nodes representing infomation bits (denoted as VP) and set of nodes representing parity check bits (denoted by CP). The connection between the set of VP nodes and CP nodes follows the parity check matrix (denoted by H) as shown in the figure belows.
+
+![Tanner.png](/image/Tanner.png?raw=true)
+
+
 ### **Summation Product Algorithm**
 ### **Min-Summation Product Algorithm**
 ### **Box-Plus Summation Product Algorithm**
