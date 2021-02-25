@@ -4,7 +4,7 @@ Low-Density Parity-Check (LDPC) code is a linear error correcting code utilizing
 ## **Table of Contents**
 - [Polar Encoder](#polar-encoder)
 - [Polar Decoder](#polar-decoder)
-    - [Summation Product Algorithm](#summation-product-algorithm)
+    - [Belief Propagation Summation Product Algorithm](#belief-propagation-summation-product-algorithm)
     - [Min-Summation Product Algorithm](#minsummation-product-algorithm)
     - [Box-Plus Summation Product Algorithm](#box-plus-summation-product-algorithm)
 
@@ -24,8 +24,10 @@ Step 3 is **VP Updating**. At this step, the LLR value at each VP is updated bas
 Step 4 is **Hard decision**. At this step, the result obtained after Step 3 is compared with the value 0 to decide whether the transmitted bit is 0 or 1. If the value obtained in Step 3 is greater than or equal to 0, we can say that, the probability that the received bit on the receiver is 0 is higher than the probability that the received bit on the receiver is 1, and decides that the received bit is 0. Otherwise, if the value obtained in Step 3 is less than 0, we can say that, the probability that the bit received on the receiver is 0 is lower than the probability that the received bit on the receiver is 1 and decides that the obtained bit is 1.  
 Step 5 is **Syndrome Checking**. The bit sequence obtained after Step 4 is multiplied in a finite field GF(2) by a parity check matrix H. If the gained result is zeros vector, then the bit string obtained in Step 4 is the last decoded bit string after the loop is ended. If the result is a non zeros vector, go back to Step 1 of this cycle.
 
-
-
-### **Summation Product Algorithm**
+### **Belief Propagation Summation Product Algorithm**
 ### **Min-Summation Product Algorithm**
 ### **Box-Plus Summation Product Algorithm**
+
+## **Reference**
+- [1]
+- [2]
